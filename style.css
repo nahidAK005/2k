@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    list-style: none;
+}
+:root{
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,1);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 90vh;
+    background:  #223243;
+}
+.content{
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 30px;
+    border: 8px solid #223243;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.233);
+}
+.content .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.content .form h2{
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+.content .form .inputbox{
+    position: relative;
+     width: 300px; 
+}
+ .content .form .inputbox input{
+    padding: 5px 10px 12px 48px;
+    width: 100%;
+    background: #223243;
+    border:  1px solid rgba(8, 229, 236, 0.863); 
+    color: white;
+    font-weight: 300;
+    border-radius: 25px;
+    font-size: 1em;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.233);
+    border: none;
+
+} 
+
+.content .form .inputbox span{
+    position: absolute;
+    text-transform: capitalize;
+    left: 0;
+    padding: 5px 10px 12px 48px;
+    pointer-events: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: .5s;
+    color: rgba(255, 255, 255, 0.5);
+}
+.content .form .inputbox input:valid ~ span, 
+.content .form .inputbox input:focus ~ span{
+  display: none;
+  border: none;
+}
+
+
+
+
+.content .form .inputbox input[type="submit"]{
+    background: #00dfc4;
+    color: #223243;
+    padding: 10px 0;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: -5px -5px 15px rgba(1, 85, 67, 0.219);
+
+} 
+.content .form p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .75em;
+    font-weight: 400;
+}
+
+.content .form a{
+    font-weight: 500;
+    color: white;
+}
+ .content .form .inputbox i{
+    position: absolute;
+     top: 5px;
+     left: 15px;
+     width: 25px;
+     padding: 2px 0;
+     padding-right: 8px;
+     color: #00dfc4;
+     border-radius:  1px solid #00dfc4;
+  
+ }
+
+
